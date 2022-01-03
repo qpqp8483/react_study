@@ -1,0 +1,39 @@
+.list_box{
+    margin:100px auto 0;
+    padding:50px;
+    width:500px;
+    border:1px solid #ddd;
+}
+.list_box > input{
+    padding-left:10px;
+    width:440px;
+    height:35px;
+    font-size:17px;
+    box-sizing:border-box;
+}
+.list_box button{
+    display:inline-block;
+    margin-left:5px;
+    width:55px;
+    height:35px;
+    vertical-align:top;
+    font-size:15px;
+}
+.list_box ul {
+    padding:0;
+}
+.list_box ul li{
+    position:relative;
+    padding:10px 50px 10px 10px;
+    list-style:none;
+    line-height:150%;
+    border-bottom:1px solid #ddd;
+}
+.list_box ul li span{
+    position:absolute;
+    top:10px; 
+    right:10px;
+}
+.list_box ul li span:hover{
+    cursor: pointer;
+}
