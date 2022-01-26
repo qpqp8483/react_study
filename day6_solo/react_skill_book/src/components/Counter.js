@@ -43,6 +43,7 @@ const Counter = () => {
             <button onClick={() => dispatch({ type: 'DECREMENT' }) }> -1 </button>
         </div>
     );
+    
 };
 
 export default Counter;
