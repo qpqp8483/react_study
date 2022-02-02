@@ -6,6 +6,15 @@ const sizes = {
     tablet: 768
 }
 
+
+const getTextColorProvider = (str) =>{
+    if(str === "black"){
+        return "red"
+    }else{
+        return "green"
+    }
+}
+
 const media = Object.keys(sizes).reduce((acc,label) => {
     acc[label] = (...args) => css`
         @media (max-width : ${sizes[label] / 16}em){
@@ -51,7 +60,8 @@ const Button = styled.button`
                 background: white;
                 color: black;
             }
-    `};
+        `
+    };
     & + button {
         margin-left:1rem;
     }
