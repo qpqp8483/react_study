@@ -61,7 +61,7 @@ divToggle.onclick = () => {
 };
 btnIncrease.onclick = () => {
     console.log('sd');
-    store.dispatch(increase());
+    store.dispatch(increase(1));
 };
 btnDecrease.onclick = () => {
     store.dispatch(decrease());
